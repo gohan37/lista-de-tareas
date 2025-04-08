@@ -122,23 +122,17 @@
     font-size: 1rem;
     color: #ddd;
   }
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  animation: fadeIn 1.2s ease-out;
+}
 
-  .footer {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: aparecerFooter 1.5s ease-out forwards;
-    text-align: center;
-    padding: 20px;
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-    font-size: 14px;
-    margin-top: 40px;
-    border-top: 1px solid #333;
-  }
-  
-  @keyframes aparecerFooter {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
