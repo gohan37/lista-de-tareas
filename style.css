@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+  
+  .container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ffff;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #tareaInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+  }
+  
+  #agregarBtn {
+    background-color: #00ffff;
+    color: #121212;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #agregarBtn:hover {
+    background-color: #00c0c0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    background-color: #2c2c2c;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  button.eliminar {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button.eliminar:hover {
+    background-color: #cc0000;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  li input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.2);
+  }
+  
+  li span {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #ddd;
+  }
