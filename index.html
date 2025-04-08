@@ -15,7 +15,28 @@
     </div>
     <ul id="listaTareas"></ul>
   </div>
-
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, getDocs, onSnapshot, doc, updateDoc } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyD1Kmau5rYrNMwk6QnutzXf42nUs-vzXcs",
+      authDomain: "lista-de-tareas-bc637.firebaseapp.com",
+      projectId: "lista-de-tareas-bc637",
+      storageBucket: "lista-de-tareas-bc637.firebasestorage.app",
+      messagingSenderId: "988146334173",
+      appId: "1:988146334173:web:0f18ee2e0d3685d28f5e34"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+  
+   
+    window.db = db;
+    window.firestoreMethods = { collection, addDoc, getDocs, onSnapshot, doc, updateDoc };
+  
+    console.log("🔥 Firebase conectado desde GitHub Pages");
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
