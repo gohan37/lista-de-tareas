@@ -19,9 +19,9 @@ async function guardarTareaEnFirestore(titulo) {
       completado: false,
       fecha: new Date()
     });
-    console.log("✅ Tarea guardada en Firestore con ID: ", docRef.id);
+    console.log(" Tarea guardada en Firestore con ID: ", docRef.id);
   } catch (e) {
-    console.error("❌ Error al guardar en Firestore: ", e);
+    console.error(" Error al guardar en Firestore: ", e);
   }
 }
 
@@ -39,7 +39,7 @@ function agregarTarea() {
     guardarTareas(tareas);
     mostrarTareas();
 
-    // 💾 Guardar también en Firestore
+   
     guardarTareaEnFirestore(texto);
 
     tareaInput.value = "";
