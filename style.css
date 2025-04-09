@@ -5,7 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
- body {
+  body {
     background-color: #121212;
     color: #f0f0f0;
     display: flex;
@@ -23,13 +23,15 @@
   }
   
   .container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* Cambialo a center si querés centrar también verticalmente */
-  padding: 2rem 1rem;
-}
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    width: 90%;
+    max-width: 800px;
+    flex: 1;
+    padding: 20px;
+  }
   
   h1 {
     text-align: center;
@@ -120,23 +122,23 @@
     font-size: 1rem;
     color: #ddd;
   }
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  color: #fff;
-  font-size: 0.9rem;
-  animation: fadeIn 1.2s ease-out;
-  margin-top: auto;
-}
 
-/* 🎞️ Animación del footer */
-@keyframes fadeIn {
-  from {
+  .footer {
     opacity: 0;
     transform: translateY(30px);
+    animation: aparecerFooter 1.5s ease-out forwards;
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  @keyframes aparecerFooter {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
